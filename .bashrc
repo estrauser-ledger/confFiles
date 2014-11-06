@@ -127,11 +127,12 @@ color_my_prompt
 export USER_HOME="/home/estrauser"
 export JAVA_HOME="$USER_HOME/opt/jdk8"
 export MAVEN_HOME="$USER_HOME/opt/maven"
+export SBT_HOME="$USER_HOME/opt/sbt"
 export MONGO_HOME="$USER_HOME/opt/mongodb"
 export ROBOMONGO_HOME="$USER_HOME/opt/robomongo"
 export ACTIVATOR_HOME="$USER_HOME/opt/activator"
 
-export PATH="$USER_HOME/bin:$ACTIVATOR_HOME:$ROBOMONGO_HOME/bin:$MONGO_HOME/bin:$MAVEN_HOME/bin:$JAVA_HOME/bin:$PATH"
+export PATH="$USER_HOME/bin:$ACTIVATOR_HOME:$ROBOMONGO_HOME/bin:$MONGO_HOME/bin:$SBT_HOME/bin:$MAVEN_HOME/bin:$JAVA_HOME/bin:$PATH"
 
 alias gst="git status"
 alias gco="git checkout"
@@ -140,3 +141,5 @@ alias gp="git pull"
 alias ga="git add -p"
 
 alias mci="mvn clean install"
+
+alias mongo.="mongod --dbpath='.'"
