@@ -142,7 +142,8 @@ export PATH="$USER_HOME/bin:$DOCKER_HOME/bin:$PHANTOMJS_HOME/bin:$ACTIVATOR_HOME
 alias gst="git status"
 alias gco="git checkout"
 alias gc="git commit"
-alias gl="git log --oneline --graph --decorate --color -20"
+#alias gl="git log --oneline --graph --decorate --color -20"
+alias gl="git log --graph -20 --pretty=format:'%C(yellow)%h¤%Cred%ar¤%Cblue%an¤%Cgreen%d %Creset%s' | column -ts '¤'"
 alias gp="git pull"
 alias ga="git add -p"
 
