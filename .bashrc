@@ -147,7 +147,7 @@ alias gl="git log --oneline --graph --decorate --color -20"
 alias gl="git log --graph --oneline --decorate -n20"
 alias gp="git pull"
 alias ga="git add -p"
-alias gb="git fetch && git branch --remote"
+alias gb="git fetch && git branch && git branch --remote"
 
 alias rg="ripgrep.rg"
 
