@@ -158,3 +158,4 @@ alias mci="mvn clean install"
 
 alias mongo.="mongod --dbpath='.'"
 
+export EDITOR=vim

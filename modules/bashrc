@@ -1,0 +1,1 @@
+echo "source `pwd`/.bashrc" >> $HOME/.bashrc

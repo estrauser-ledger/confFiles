@@ -1,0 +1,3 @@
+sudo -E apt install docker docker-compose
+
+usermod -aG docker ${USER}

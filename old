@@ -1,0 +1,47 @@
+ask_input() {
+  input=0
+  while [[ ! $input =~ ^[yYnN]?$ ]]
+  do
+    read -p "$1" input
+  done
+
+  if [ "$input" = "y" ] || [ "$input" = "Y" ] || [ "$input" = "" ]
+  then
+    return 1
+  else
+    return 0
+  fi
+}
+
+
+ask_input 'install terminator [Y/n]: '
+terminator=$?
+
+ask_input 'install ripgrep [Y/n]: '
+rg=$?
+
+#git
+#sdkman /w sbt & java8
+#docker
+#fuzzy search~
+#vim
+
+if [ "$terminator" -eq 1 ]
+then
+  sudo echo 'Installing terminator...'
+  #sudo add-apt-repository ppa:gnome-terminator
+  #sudo apt update
+  #sudo apt install terminator
+  sudo echo 'Done!'
+fi
+
+if [ "$rg" -eq 1 ]
+then
+  echo 'Installing ripgrep...'
+  #sudo add-apt-repository ppa:x4121/ripgrep
+  #sudo apt update
+  #sudo apt install ripgrep
+  echo 'Done!'
+fi
+
+
