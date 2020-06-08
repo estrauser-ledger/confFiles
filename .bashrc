@@ -148,6 +148,8 @@ alias gl="git log --graph --oneline --decorate -n20"
 alias gp="git pull"
 alias ga="git add -p"
 alias gb="git fetch && git branch && git branch --remote"
+alias gd="git diff"
+alias gdc="git diff --cached"
 
 alias rg="ripgrep.rg"
 
