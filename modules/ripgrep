@@ -1,1 +1,1 @@
-echo RIPGREP
+sudo apt install ripgrep

@@ -24,8 +24,10 @@ done
 
 for module in "${!modules[@]}"
 do
-  echo "Installing ${modules[$module]}..."
+  echo "-- Installing ${modules[$module]}..."
   bash $module
+  echo "-- Done"
+  echo ""
 done
 
 
