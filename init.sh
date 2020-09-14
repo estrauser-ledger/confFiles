@@ -22,6 +22,8 @@ do
   fi
 done
 
+echo ""
+
 for module in "${!modules[@]}"
 do
   echo "-- Installing ${modules[$module]}..."
