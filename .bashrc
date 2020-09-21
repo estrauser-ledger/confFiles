@@ -125,19 +125,8 @@ function color_my_prompt {
 color_my_prompt
 
 export USER_HOME="/home/estrauser"
-export JAVA_HOME="$USER_HOME/opt/jdk8"
-export INSTALL4J_JAVA_HOME="$USER_HOME/opt/jre1.7.0"
-export MAVEN_HOME="$USER_HOME/opt/maven"
-export SBT_HOME="$USER_HOME/opt/sbt"
-export MONGO_HOME="$USER_HOME/opt/mongodb"
-export ROBOMONGO_HOME="$USER_HOME/opt/robomongo"
-export ACTIVATOR_HOME="$USER_HOME/opt/activator"
-export PHANTOMJS_HOME="$USER_HOME/opt/phantomjs"
-export DOCKER_HOME="$USER_HOME/opt/docker"
 
-export DOCKER_HOST="tcp://dockerbo.vidal.net:4243"
-
-export PATH="$USER_HOME/bin:$DOCKER_HOME/bin:$PHANTOMJS_HOME/bin:$ACTIVATOR_HOME:$ROBOMONGO_HOME/bin:$USER_HOME/opt/DbVisualizer:$MONGO_HOME/bin:$SBT_HOME/bin:$MAVEN_HOME/bin:$JAVA_HOME/bin:$PATH"
+export PATH="$USER_HOME/bin:$PATH"
 
 alias gst="git status"
 alias gco="git checkout"
