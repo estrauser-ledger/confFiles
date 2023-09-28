@@ -1,2 +1,2 @@
 sudo apt install vim
-cp `pwd`/.vimrc $HOME
+cp `pwd`/resources/.vimrc $HOME
