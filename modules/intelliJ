@@ -1,0 +1,12 @@
+input=0
+while [[ ! $input =~ ^[cCuU]?$ ]]
+do
+  read -p "Community Or Ultimate [C/u]: " input
+done
+
+if [ "$input" = "c" ] || [ "$input" = "C" ] || [ "$input" = "" ]
+then
+    sudo snap install intellij-idea-community --classic --edge
+if [ "$input" = "u" ] || [ "$input" = "U" ]
+    sudo snap install intellij-idea-ultimate --classic --edge
+fi
